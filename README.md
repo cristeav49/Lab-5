@@ -6,8 +6,7 @@
 * Mihai Trofim - Simulation of traffic light
 
 #What we have done
-* Simulataion of a traffic light for an intersection with 4 traffic lights;
-* The user should be able to increase the speed of traffic light(using wheel);
-* The user may be able to increase the number of generated random cars (pressing left click to appear a new random car); 
-* 4 crosswalks;
-* All rules in intersection are respected;
+* Simulate the work of a traffic light for an intersection with 4 traffic lights. 
+* The user should be able to increase the speed of traffic light ;
+* The user may be able to increase the number of generated random cars;
+* In the simulation are present 2 crosswalks.
