@@ -76,21 +76,21 @@ bool Car::Move(const HDC &hdc,const RECT& rect,HBRUSH &hBrush) {
     }
     if (xSpeed==0 && right==0){
         center.y+=-abs(ySpeed);
-       LoadAndBlitBitmap(TEXT("images/CarUp.bmp"), hdc, center.x-25, center.y-25);
+       LoadAndBlitBitmap(TEXT("app/images/CarUp.bmp"), hdc, center.x-25, center.y-25);
 
     } else if (xSpeed==0 && right==1){
         center.y+=abs(ySpeed);
-        LoadAndBlitBitmap(TEXT("images/CarDown.bmp"), hdc, center.x-25, center.y-25);
+        LoadAndBlitBitmap(TEXT("app/images/CarDown.bmp"), hdc, center.x-25, center.y-25);
 
     } else if (xSpeed==0 && right==2){
         xSpeed=4;
         center.x+=xSpeed;
-    LoadAndBlitBitmap(TEXT("images/car.bmp"), hdc, center.x-25, center.y-25);
+    LoadAndBlitBitmap(TEXT("app/images/car.bmp"), hdc, center.x-25, center.y-25);
 
     }
 
     if (xSpeed > 0){
-    LoadAndBlitBitmap(TEXT("images/car.bmp"), hdc, center.x-25, center.y-25);
+    LoadAndBlitBitmap(TEXT("app/images/car.bmp"), hdc, center.x-25, center.y-25);
     }
 
     SelectObject(hdc,GetStockObject(WHITE_BRUSH));
